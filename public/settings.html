@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <title>Settings</title>
+  </head>
+
+  <body>
+    <div id="topbar">
+      <div id="logo">
+        <h1 style="font-family: century gothic;">studently.</h1>
+      </div>
+
+      <div id="navigation">
+        <ul>
+          <h1>
+            <li><a href="index.html">Decks</a></li>
+            <li><a href="create.html">Create Card</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li id="logininfo">Logged in as: Student</li>
+            <li>
+              <button type="button" id="logout-button">Log out</button>
+            </li>
+          </h1>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--This is where the user will be able to configure the settings-->
+    <div id="main-body">
+      <div id="settings">
+        <form>
+          <label for="new-cards">New Cards per day:</label>
+          <input type="text" id="new-cards" name="new-cards"><br>
+          <label for="learnt-amount">Amount of successes before card is learnt:</label>
+          <input type="text" id="learnt-amount" name="learnt-amount"><br><br>
+          <input type="submit" value="Save">
+        </form>
+        <p>
+        <button type="button" id="delete-account">Delete account</button>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="./js/index.js"></script>
+</html>
